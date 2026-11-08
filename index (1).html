@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wine Love — вино та вечори на Подолі</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--ink:#000;--mute:#666;--line:#d9d9d9;--card:#f4f4f4;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--ink:#fff;--mute:#a0a0a0;--line:#333;--card:#141414;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#000;--ink:#fff;--mute:#a0a0a0;--line:#333;--card:#141414;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Onest,system-ui,sans-serif}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;margin:0;line-height:1}
+a{color:inherit}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.hero{padding:72px 0 48px;border-bottom:1px solid var(--line)}
+.hero small{letter-spacing:.3em;text-transform:uppercase;font-size:12px;color:var(--mute)}
+.hero h1{font-size:clamp(64px,22vw,130px);margin:14px 0 18px;font-style:italic}
+.hero p{max-width:32ch;font-size:19px;color:var(--mute);margin:0 0 28px}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:600;padding:15px 28px;margin:0 10px 10px 0}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+section{padding:44px 0;border-bottom:1px solid var(--line)}
+h2{font-size:clamp(36px,10vw,52px);margin-bottom:22px}
+h2 em{font-style:italic}
+.row{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0}
+.row h3{font-size:25px;margin-bottom:4px}
+.row p{margin:0;font-size:15px;color:var(--mute)}
+.row b{font-family:"Cormorant Garamond",Georgia,serif;font-size:24px;font-weight:600;white-space:nowrap}
+.sub{font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:var(--mute);margin:26px 0 4px}
+.box{background:var(--card);padding:26px}
+.box p{margin:0 0 12px}
+.box .tel{font-family:"Cormorant Garamond",Georgia,serif;font-size:34px;font-weight:600;text-decoration:none}
+.note{font-size:13px;color:var(--mute);padding:26px 0 40px}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="hero">
+  <small>Київ · Поділ</small>
+  <h1>Wine Love</h1>
+  <p>Келих вина, смачні закуски й затишний вечір у центрі Подолу.</p>
+  <a class="btn" href="tel:+380957508008">Забронювати стіл</a>
+  <a class="btn alt" href="#menu">Меню</a>
+</header>
+
+<section id="menu">
+  <h2>Меню <em>& вино</em></h2>
+  <div class="sub">Вино за келихом</div>
+  <div class="row"><div><h3>Біле сухе</h3><p>Свіже, з нотами цитруса</p></div><b>130 ₴</b></div>
+  <div class="row"><div><h3>Червоне сухе</h3><p>Оксамитове, з ягідним післясмаком</p></div><b>140 ₴</b></div>
+  <div class="row"><div><h3>Ігристе</h3><p>Для гарного початку вечора</p></div><b>150 ₴</b></div>
+  <div class="sub">Закуски</div>
+  <div class="row"><div><h3>Сирна тарілка</h3><p>Добірка сирів, мед, горіхи, виноград</p></div><b>320 ₴</b></div>
+  <div class="row"><div><h3>Брускети</h3><p>Три види на хрусткому хлібі</p></div><b>180 ₴</b></div>
+  <div class="row"><div><h3>М’ясна тарілка</h3><p>Прошуто, салямі, маринади</p></div><b>360 ₴</b></div>
+</section>
+
+<section id="contact">
+  <h2>Як <em>нас знайти</em></h2>
+  <div class="box">
+    <p>Київ, вул. Андрія Верхогляда, 20</p>
+    <p><a class="tel" href="tel:+380957508008">+380 95 750 80 08</a></p>
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Wine+Love+Верхогляда+20+Київ">Відкрити на мапі</a>
+  </div>
+</section>
+
+<p class="note">Демо-версія сайту. Назви, опис і ціни — приклад, їх буде замінено на реальні дані закладу.</p>
+</main>
+</body>
+</html>
